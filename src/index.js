@@ -1,5 +1,7 @@
 import app from './server.js'
 
-app.listen(3003, ()=>{
-    console.log(`Inicio correcto puerto: ${3003}`)
+// Crea un servidor en un el puerto que se especifica
+app.listen(app.get('port'),()=>{
+    console.log(`Servidor iniciado en ${app.get('port')}`)
 })
+
